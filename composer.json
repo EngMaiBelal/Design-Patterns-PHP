@@ -1,0 +1,14 @@
+{
+    "name": "computec/design-patterns-course",
+    "description": "code ex for design pattern",
+    "type": "no",
+    "license": "no",
+    "autoload": {
+        "psr-4": {
+            "Creational\\": "creational/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Builder;
+namespace Creational\Builder;
 
 interface CarBuilderInterface{
     public function createCar();

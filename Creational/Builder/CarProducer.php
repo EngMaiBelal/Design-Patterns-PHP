@@ -1,8 +1,8 @@
 <?php
 
-namespace Builder;
+namespace Creational\Builder;
 
-use Builder\Models\Car;
+use Creational\Builder\Models\Car;
 
 class CarProducer{
     private $Builder;
@@ -17,7 +17,6 @@ class CarProducer{
         $this->Builder->addDoors();
         $this->Builder->addEngine();
         $this->Builder->addWheels();
-        $this->Builder->getCar();
+        return $this->Builder->getCar();
     }
 }
-// this is the place that we will create

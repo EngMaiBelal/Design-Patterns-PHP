@@ -1,18 +1,13 @@
 <?php
 
-namespace Builder;
+namespace Creational\Builder;
 
-use Builder\Models\Car;
-use Builder\Models\BMWCar;
-use Builder\CarBuilderInterface;
+use Creational\Builder\Models\Car;
+use Creational\Builder\Models\BMWCar;
+use Creational\Builder\CarBuilderInterface;
 
 class BMWCarBuilder implements CarBuilderInterface{
-    
-    /**
-     * type 
-     *
-     * @var Car
-     */
+
     private $type;
 
     public function createCar(){
@@ -30,7 +25,7 @@ class BMWCarBuilder implements CarBuilderInterface{
     public function addWheels(){
         $this->type->setParts('BMWWheels','BMWWheels');
     }
-    public function getCar():Car{
+    public function getCar() :Car{
         return $this->type;
     }
 }

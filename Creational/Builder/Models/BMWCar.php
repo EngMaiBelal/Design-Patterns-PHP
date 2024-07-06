@@ -1,12 +1,8 @@
 <?php
 
-namespace Builder\Models;
+namespace Creational\Builder\Models;
+
+use Creational\Builder\Models\Car;
 
 class BMWCar extends Car{
-
-    private $data = [];
-
-    public function setParts($name, $value){
-        $this->data[$name] = $value;
-    }
 }

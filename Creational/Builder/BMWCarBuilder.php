@@ -10,22 +10,33 @@ class BMWCarBuilder implements CarBuilderInterface{
 
     private $type;
 
-    public function createCar(){
+    public function createCar()
+    {
         $this->type = new BMWCar();
     }
-    public function addBody(){
+    
+    public function addBody()
+    {
         $this->type->setParts('BMWBody','BMWBody');
     }
-    public function addDoors(){
+    
+    public function addDoors()
+    {
         $this->type->setParts('BMWDoors','BMWDoors');
     }
-    public function addEngine(){
+    
+    public function addEngine()
+    {
         $this->type->setParts('BMWEngine','BMWEngine');
     }
-    public function addWheels(){
+    
+    public function addWheels()
+    {
         $this->type->setParts('BMWWheels','BMWWheels');
     }
-    public function getCar() :Car{
+    
+    public function getCar() :Car
+    {
         return $this->type;
     }
 }

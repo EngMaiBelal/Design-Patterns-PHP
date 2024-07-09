@@ -10,22 +10,33 @@ class BenzCarBuilder implements CarBuilderInterface{
 
     private $type;
 
-    public function createCar(){
+    public function createCar()
+    {
         $this->type = new BenzCar();
     }
-    public function addBody(){
+    
+    public function addBody()
+    {
         $this->type->setParts('BenzBody','BenzBody');
     }
-    public function addDoors(){
+    
+    public function addDoors()
+    {
         $this->type->setParts('BenzDoors','BenzDoors');
     }
-    public function addEngine(){
+    
+    public function addEngine()
+    {
         $this->type->setParts('BenzEngine','BenzEngine');
     }
-    public function addWheels(){
+    
+    public function addWheels()
+    {
         $this->type->setParts('BenzWheels','BenzWheels');
     }
-    public function getCar() :Car{
+    
+    public function getCar() :Car
+    {
         return $this->type;
     }
 }

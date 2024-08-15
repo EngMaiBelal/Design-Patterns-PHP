@@ -5,7 +5,9 @@
     "license": "no",
     "autoload": {
         "psr-4": {
-            "Creational\\": "creational/"
+            "Creational\\": "creational/",
+            "Structural\\": "structural/"
+
         }
     },
     "require-dev": {
